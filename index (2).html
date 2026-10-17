@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WVN & Cotton Industry manufactures custom football kits, basketball uniforms, training wear, gym wear, hoodies, tracksuits and private-label apparel for teams and brands worldwide.">
+<title>WVN & Cotton Industry | Custom Sportswear Manufacturer</title>
+<style>
+:root{
+  --bg:#0a0a0a;
+  --bg2:#111111;
+  --card:#161616;
+  --ink:#ffffff;
+  --muted:#9a9a9a;
+  --lime:#c8ff00;
+  --lime-dark:#a8d900;
+  --line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1140px,92%);margin:0 auto}
+button{font-family:inherit}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.5px}
+.mark{width:42px;height:42px;background:var(--lime);color:#000;display:grid;place-items:center;font-size:20px;font-weight:950;border-radius:8px;transform:skew(-8deg)}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text strong{font-size:15px;letter-spacing:.5px}
+.brand-text small{font-size:9px;letter-spacing:2.5px;color:var(--muted);font-weight:700;margin-top:3px}
+.nav-right{display:flex;align-items:center;gap:16px;flex:1;justify-content:flex-end}
+.search-wrap{display:flex;align-items:center;background:#0f0f0f;border:1px solid var(--line2);border-radius:8px;overflow:hidden;max-width:280px;width:100%}
+.search-wrap input{flex:1;background:transparent;border:0;padding:10px 14px;color:#fff;font-size:13px;outline:none;min-width:0}
+.search-wrap input::placeholder{color:#666}
+.search-wrap button{background:var(--lime);color:#000;border:0;padding:10px 14px;font-weight:800;font-size:12px;cursor:pointer;white-space:nowrap}
+.search-wrap button:hover{background:var(--lime-dark)}
+.links{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:700}
+.links a:hover{color:var(--lime)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:#000;padding:12px 18px;border-radius:6px;font-weight:800;font-size:12px;letter-spacing:.5px}
+.nav-cta:hover{background:var(--lime-dark)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:#000}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.45;filter:grayscale(20%) contrast(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.75) 50%,rgba(0,0,0,.92) 100%)}
+.hero-content{position:relative;z-index:2;padding:100px 0 80px;width:100%}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(200,255,0,.35);background:rgba(200,255,0,.08);color:var(--lime);padding:8px 14px;border-radius:4px;font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:28px}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime)}
+.hero h1{font-size:clamp(42px,9vw,78px);line-height:.95;letter-spacing:-2.5px;font-weight:950;margin-bottom:22px;max-width:720px}
+.hero h1 .lime{color:var(--lime)}
+.hero p{max-width:520px;color:#c5c5c5;font-size:16px;line-height:1.75;margin-bottom:36px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:6px;font-weight:800;font-size:14px;letter-spacing:.4px;border:0;cursor:pointer;transition:.2s}
+.btn-lime{background:var(--lime);color:#000}
+.btn-lime:hover{background:var(--lime-dark)}
+.btn-outline{background:transparent;color:#fff;border:1px solid var(--line2)}
+.btn-outline:hover{border-color:var(--lime);color:var(--lime)}
+.btn-whatsapp{background:#1da851;color:#fff}
+.btn-whatsapp:hover{background:#168f44}
+.btn-danger{background:#c0392b;color:#fff}
+.btn-danger:hover{background:#a93226}
+.btn-sm{padding:10px 16px;font-size:12px}
+
+/* Strip */
+.strip{background:var(--lime);color:#000;padding:18px 0;overflow:hidden}
+.strip-inner{display:flex;align-items:center;gap:32px;font-size:13px;font-weight:800;letter-spacing:.3px;white-space:nowrap}
+.strip-inner span::before{content:"✦";margin-right:10px}
+
+/* Sections */
+section{padding:90px 0}
+.section-label{display:inline-block;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:14px}
+.section-title{font-size:clamp(32px,5vw,48px);font-weight:900;letter-spacing:-1.5px;line-height:1.05;margin-bottom:16px}
+.section-desc{color:var(--muted);font-size:15px;line-height:1.7;max-width:480px}
+
+/* Products */
+.products-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.25s;cursor:pointer}
+.product:hover{border-color:rgba(200,255,0,.25);transform:translateY(-4px)}
+.product img{width:100%;height:220px;object-fit:cover;background:#222}
+.product-info{padding:20px}
+.product-info small{color:var(--lime);font-size:10px;font-weight:800;letter-spacing:1.5px}
+.product-info h3{font-size:20px;font-weight:800;letter-spacing:-.4px;margin:8px 0 10px}
+.product-info p{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* About */
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
+.about-visual{background:var(--lime);color:#000;border-radius:16px;padding:36px;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
+.about-visual .big{font-size:clamp(40px,6vw,64px);font-weight:950;line-height:.95;letter-spacing:-2px}
+.about-visual .small{font-size:13px;line-height:1.6;max-width:260px;opacity:.8}
+.about-copy p{color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:16px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.feature{border-top:1px solid var(--line2);padding-top:14px}
+.feature strong{display:block;font-size:14px;margin-bottom:6px}
+.feature span{font-size:12px;color:var(--muted);line-height:1.55}
+
+/* Process */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;min-height:200px}
+.step .num{font-size:11px;color:var(--lime);font-weight:800;letter-spacing:1.5px}
+.step h3{font-size:18px;font-weight:800;margin:24px 0 10px}
+.step p{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,#141414 0%,#0d0d0d 100%);border:1px solid var(--line);border-radius:16px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta-box h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-1.2px;line-height:1.05;margin:10px 0 12px}
+.cta-box p{color:var(--muted);font-size:14px;max-width:440px;line-height:1.7}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px}
+.contact-copy p{color:var(--muted);font-size:15px;line-height:1.75;margin-bottom:24px}
+.contact-detail{padding:16px 0;border-top:1px solid var(--line);font-size:13px}
+.contact-detail strong{display:block;margin-bottom:5px;font-size:12px;letter-spacing:.5px}
+.contact-detail span{color:var(--muted)}
+.contact-detail a.phone-link{color:var(--lime);font-weight:700;cursor:pointer}
+.contact-detail a.phone-link:hover{text-decoration:underline}
+.contact-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:11px;font-weight:800;letter-spacing:1px;margin-bottom:8px;color:#ccc}
+.field input,.field select,.field textarea{
+  width:100%;background:#0f0f0f;border:1px solid var(--line2);border-radius:6px;
+  padding:13px 14px;font:inherit;font-size:14px;color:#fff;outline:none
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime)}
+.field textarea{min-height:120px;resize:vertical}
+.form .btn{width:100%;margin-top:6px}
+.hint{font-size:11px;color:var(--muted);margin-top:14px;line-height:1.5}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:28px 0;background:#080808}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot p{font-size:12px;color:var(--muted)}
+.foot-links{display:flex;gap:22px;font-size:12px;font-weight:700;align-items:center;flex-wrap:wrap}
+.foot-links a:hover{color:var(--lime)}
+.ig-link{display:inline-flex;align-items:center;gap:6px;color:var(--lime);font-weight:700}
+.ig-link:hover{opacity:.85}
+
+/* Floating WhatsApp */
+.float-wa{
+  position:fixed;right:18px;bottom:18px;z-index:40;
+  background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 28px rgba(0,0,0,.4);font-size:28px
+}
+.float-wa:hover{transform:scale(1.06)}
+
+/* Modals */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:100;
+  display:none;align-items:center;justify-content:center;padding:20px;
+  backdrop-filter:blur(6px)
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  width:min(520px,100%);max-height:90vh;overflow-y:auto;padding:28px;position:relative
+}
+.modal.wide{width:min(720px,100%)}
+.modal h2{font-size:22px;font-weight:900;letter-spacing:-.5px;margin-bottom:8px}
+.modal .modal-sub{color:var(--muted);font-size:13px;margin-bottom:22px}
+.modal-close{
+  position:absolute;top:16px;right:16px;background:transparent;border:0;
+  color:#999;font-size:22px;cursor:pointer;line-height:1
+}
+.modal-close:hover{color:#fff}
+.modal .field{margin-bottom:14px}
+.modal-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.admin-tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.admin-tab{
+  background:#0f0f0f;border:1px solid var(--line2);color:#ccc;
+  padding:10px 16px;border-radius:6px;font-size:12px;font-weight:800;cursor:pointer
+}
+.admin-tab.active{background:var(--lime);color:#000;border-color:var(--lime)}
+.admin-panel-section{display:none}
+.admin-panel-section.active{display:block}
+.admin-product-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;max-height:280px;overflow-y:auto}
+.admin-product-item{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  background:#0f0f0f;border:1px solid var(--line);border-radius:8px;padding:12px 14px
+}
+.admin-product-item span{font-size:13px;font-weight:700}
+.product-order-preview{display:flex;gap:16px;margin-bottom:20px;align-items:center}
+.product-order-preview img{width:90px;height:90px;object-fit:cover;border-radius:8px;background:#222}
+.product-order-preview h3{font-size:18px;font-weight:800;margin-bottom:4px}
+.product-order-preview p{font-size:13px;color:var(--muted)}
+.status-msg{font-size:12px;margin-top:10px;color:var(--lime)}
+.error-msg{color:#e74c3c}
+.upload-box{
+  border:1px dashed var(--line2);border-radius:8px;padding:16px;background:#0f0f0f;
+  display:flex;flex-direction:column;gap:10px;align-items:flex-start
+}
+.upload-box input[type="file"]{font-size:13px;color:#ccc;width:100%}
+.upload-preview{display:none;width:120px;height:120px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.upload-preview.show{display:block}
+.or-divider{font-size:11px;color:var(--muted);text-align:center;margin:8px 0}
+.settings-block{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}
+.settings-block h4{font-size:13px;font-weight:800;letter-spacing:.5px;margin-bottom:12px;color:var(--lime)}
+
+/* Responsive */
+@media(max-width:900px){
+  .links{display:none;position:absolute;top:72px;left:0;right:0;background:#0a0a0a;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:20px 4%;gap:18px}
+  .links.open{display:flex}
+  .menu{display:block}
+  .nav-cta{display:none}
+  .search-wrap{max-width:180px}
+  .cards{grid-template-columns:1fr 1fr}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .cta-box{flex-direction:column;align-items:flex-start;padding:36px}
+  .hero{min-height:auto}
+  .hero-content{padding:80px 0 60px}
+}
+@media(max-width:520px){
+  .cards,.process-grid,.features,.form-row{grid-template-columns:1fr}
+  .hero h1{font-size:38px}
+  .product img{height:200px}
+  section{padding:70px 0}
+  .nav-right{width:100%;justify-content:space-between}
+  .search-wrap{max-width:none;flex:1}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">
+      <span class="mark">W</span>
+      <span class="brand-text">
+        <strong id="siteNameBrand">WVN & COTTON</strong>
+        <small>INDUSTRY</small>
+      </span>
+    </a>
+    <div class="nav-right">
+      <div class="search-wrap" role="search">
+        <input type="search" id="siteSearch" placeholder="Search products or type admin…" aria-label="Search">
+        <button type="button" id="searchBtn">SEARCH</button>
+      </div>
+      <nav class="links" id="links">
+        <a href="#products">Products</a>
+        <a href="#about">About us</a>
+        <a href="#process">Our process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">REQUEST A QUOTE →</a>
+      <button class="menu" id="menu" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=85" alt="Athlete training">
+    </div>
+    <div class="wrap hero-content">
+      <div class="badge">Sportswear Manufacturer</div>
+      <h1>BUILT TO<br><span class="lime">PERFORM.</span><br>MADE TO ORDER.</h1>
+      <p id="heroDesc">WVN & Cotton Industry manufactures custom football kits, basketball uniforms, training wear, gym wear, hoodies, tracksuits and private-label apparel for teams and brands worldwide.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#contact">REQUEST A QUOTE →</a>
+        <a class="btn btn-outline" id="whatsappLink" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="wrap strip-inner">
+      <span>Team Kits</span>
+      <span>Gym & Fitness</span>
+      <span>Training Apparel</span>
+      <span>Private Label</span>
+      <span>Custom Branding</span>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="products-head">
+        <div>
+          <div class="section-label">Product Categories</div>
+          <h2 class="section-title">Gear for every game.</h2>
+        </div>
+        <p class="section-desc">Explore our sportswear categories. Specs, fabrics, branding and quantities are discussed for every project. Click a product to order.</p>
+      </div>
+      <div class="cards" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-visual">
+        <div class="section-label" style="color:#000;opacity:.7" id="aboutLabel">WVN & Cotton Industry</div>
+        <div class="big">Your vision.<br>Our<br>production.</div>
+        <div class="small">A sportswear manufacturing partner focused on your product brief and brand goals.</div>
+      </div>
+      <div class="about-copy">
+        <div class="section-label">Who we are</div>
+        <h2 class="section-title">Made around your brand.</h2>
+        <p id="aboutP1">WVN & Cotton Industry works to support sportswear and apparel projects for brands, teams, academies, wholesalers and businesses seeking custom products.</p>
+        <p>Share design references or product specifications and discuss fabrics, fit, colours, sizing, branding and packaging. Production details, quantities, timelines and pricing are confirmed for each order.</p>
+        <div class="features">
+          <div class="feature"><strong>Custom development</strong><span>Products built around your design and needs.</span></div>
+          <div class="feature"><strong>Branding options</strong><span>Logo, print, embroidery and label requirements.</span></div>
+          <div class="feature"><strong>Multiple categories</strong><span>Teamwear, fitness, training and lifestyle apparel.</span></div>
+          <div class="feature"><strong>B2B communication</strong><span>Clear project details before production begins.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">From brief to gear.</h2>
+      <p class="section-desc">A clear starting point for your next apparel order. Final timelines, quantities and specifications are confirmed per project.</p>
+      <div class="process-grid">
+        <div class="step">
+          <div class="num">STEP 01</div>
+          <h3>Share your brief</h3>
+          <p>Tell us product types, design references, estimated quantities and target delivery dates.</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 02</div>
+          <h3>Confirm details</h3>
+          <p>Discuss fabric, fit, sizing, colours, logos, labels and packaging requirements.</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 03</div>
+          <h3>Review the quote</h3>
+          <p>Align on pricing, minimum order quantity, sampling and production schedule.</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 04</div>
+          <h3>Approve production</h3>
+          <p>Move forward after specifications and the agreed production plan are approved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="wrap" style="padding-bottom:90px">
+    <div class="cta-box">
+      <div>
+        <div class="section-label">Have a project in mind?</div>
+        <h2>Let’s make your<br>next collection.</h2>
+        <p>Tell us about your team kit, fitness line or private-label collection. Send an enquiry to discuss your requirements.</p>
+      </div>
+      <a class="btn btn-lime" href="#contact">Talk to our team →</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--bg2);padding-top:90px">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let’s talk<br>production.</h2>
+        <p>Prepare an enquiry with your contact details and product requirements. Use WhatsApp for a quick message or the form to prepare an email enquiry.</p>
+        <div class="contact-detail">
+          <strong>WEBSITE</strong>
+          <span>www.wvnandcottonindustry.com</span>
+        </div>
+        <div class="contact-detail">
+          <strong>EMAIL</strong>
+          <span id="displayEmail">wvnandcottonindustry02@gmail.com</span>
+        </div>
+        <div class="contact-detail">
+          <strong>WHATSAPP</strong>
+          <a class="phone-link" id="displayPhone" href="#">+92 306 8160300</a>
+        </div>
+        <div class="contact-detail">
+          <strong>INSTAGRAM</strong>
+          <a class="ig-link" id="igLink" href="https://www.instagram.com/wvnandcotton_?cplk=MXhpZmZ3d3MxcGtndQ==" target="_blank" rel="noopener">WVN & cotton industry</a>
+        </div>
+        <div class="contact-buttons">
+          <a class="btn btn-whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noopener">WhatsApp Us →</a>
+        </div>
+      </div>
+
+      <form class="form" id="quoteForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">YOUR NAME *</label>
+            <input id="name" name="name" required placeholder="Name">
+          </div>
+          <div class="field">
+            <label for="company">COMPANY</label>
+            <input id="company" name="company" placeholder="Company / brand">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">YOUR EMAIL *</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com">
+          </div>
+          <div class="field">
+            <label for="product">PRODUCT TYPE *</label>
+            <select id="product" name="product" required>
+              <option value="">Choose a category</option>
+              <option>Football & team kits</option>
+              <option>Basketball uniforms</option>
+              <option>Training & running wear</option>
+              <option>Gym & fitness wear</option>
+              <option>Hoodies & tracksuits</option>
+              <option>Private label apparel</option>
+              <option>Multiple / other categories</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="details">PROJECT DETAILS *</label>
+          <textarea id="details" name="details" required placeholder="Estimated quantity, design, fabric, sizes, branding and timeline..."></textarea>
+        </div>
+        <button class="btn btn-lime" type="submit">PREPARE EMAIL ENQUIRY →</button>
+        <p class="hint">The form opens an email in your app. For a quick chat, use the WhatsApp button.</p>
+        <p id="formStatus" class="hint" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#home">
+      <span class="mark">W</span>
+      <span class="brand-text">
+        <strong id="siteNameFooter">WVN & COTTON</strong>
+        <small>INDUSTRY</small>
+      </span>
+    </a>
+    <p>© <span id="year"></span> <span id="siteNameCopy">WVN & Cotton Industry</span>. All rights reserved.</p>
+    <div class="foot-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="ig-link" id="igLinkFooter" href="https://www.instagram.com/wvnandcotton_?cplk=MXhpZmZ3d3MxcGtndQ==" target="_blank" rel="noopener">WVN & cotton industry</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="float-wa" id="floatWa" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.85 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Password Modal -->
+<div class="modal-overlay" id="passwordModal">
+  <div class="modal">
+    <button class="modal-close" data-close="passwordModal" aria-label="Close">×</button>
+    <h2>Admin Access</h2>
+    <p class="modal-sub">Enter the admin password to continue.</p>
+    <div class="field">
+      <label for="adminPassword">PASSWORD</label>
+      <input type="password" id="adminPassword" placeholder="Enter password" autocomplete="current-password">
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-lime" id="passwordSubmit">ENTER</button>
+    </div>
+    <p id="passwordError" class="hint error-msg" style="display:none"></p>
+  </div>
+</div>
+
+<!-- Admin Panel Modal -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal wide">
+    <button class="modal-close" data-close="adminModal" aria-label="Close">×</button>
+    <h2>Admin Panel</h2>
+    <p class="modal-sub">Manage products, site details, Instagram and admin password. Changes are saved in this browser.</p>
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="products">Products</button>
+      <button class="admin-tab" data-tab="settings">Site Settings</button>
+      <button class="admin-tab" data-tab="password">Change Password</button>
+    </div>
+
+    <div class="admin-panel-section active" id="tab-products">
+      <h3 style="font-size:15px;margin-bottom:12px">Add new product</h3>
+      <div class="form-row">
+        <div class="field">
+          <label>TITLE *</label>
+          <input id="newProductTitle" placeholder="e.g. Football Kits">
+        </div>
+        <div class="field">
+          <label>CATEGORY LABEL</label>
+          <input id="newProductCat" placeholder="e.g. 01 / TEAM SPORTS">
+        </div>
+      </div>
+      <div class="field">
+        <label>DESCRIPTION</label>
+        <textarea id="newProductDesc" placeholder="Short product description" style="min-height:70px"></textarea>
+      </div>
+      <div class="field">
+        <label>PRODUCT IMAGE</label>
+        <div class="upload-box">
+          <input type="file" id="newProductFile" accept="image/*">
+          <img id="newProductPreview" class="upload-preview" alt="Preview">
+          <p class="hint" style="margin:0">Upload any image from your device (no size limit enforced). Or paste a URL below.</p>
+        </div>
+        <div class="or-divider">— or image URL —</div>
+        <input id="newProductImgUrl" placeholder="https://... (optional if you uploaded a file)">
+      </div>
+      <button class="btn btn-lime btn-sm" id="addProductBtn">ADD PRODUCT</button>
+      <p id="addProductStatus" class="status-msg"></p>
+
+      <h3 style="font-size:15px;margin:24px 0 12px">Current products</h3>
+      <div class="admin-product-list" id="adminProductList"></div>
+    </div>
+
+    <div class="admin-panel-section" id="tab-settings">
+      <div class="field">
+        <label>WEBSITE / BRAND NAME</label>
+        <input id="settingName" placeholder="WVN & Cotton Industry">
+      </div>
+      <div class="field">
+        <label>CONTACT EMAIL</label>
+        <input id="settingEmail" type="email" placeholder="email@example.com">
+      </div>
+      <div class="field">
+        <label>WHATSAPP NUMBER (digits only, with country code)</label>
+        <input id="settingWhatsApp" placeholder="923068160300">
+      </div>
+      <div class="field">
+        <label>DISPLAY PHONE TEXT</label>
+        <input id="settingPhoneDisplay" placeholder="+92 306 8160300">
+      </div>
+
+      <div class="settings-block">
+        <h4>INSTAGRAM</h4>
+        <div class="field">
+          <label>INSTAGRAM DISPLAY NAME</label>
+          <input id="settingIgLabel" placeholder="WVN & cotton industry">
+        </div>
+        <div class="field">
+          <label>INSTAGRAM LINK (URL)</label>
+          <input id="settingIgUrl" placeholder="https://www.instagram.com/...">
+        </div>
+      </div>
+
+      <button class="btn btn-lime btn-sm" id="saveSettingsBtn">SAVE SETTINGS</button>
+      <p id="settingsStatus" class="status-msg"></p>
+    </div>
+
+    <div class="admin-panel-section" id="tab-password">
+      <h3 style="font-size:15px;margin-bottom:12px">Change admin password</h3>
+      <p class="hint" style="margin-bottom:16px">Default password is <strong style="color:#c8ff00">admin123</strong>. After you change it, use the new password next time you type “admin” in search.</p>
+      <div class="field">
+        <label>CURRENT PASSWORD *</label>
+        <input type="password" id="settingPassCurrent" placeholder="Current password" autocomplete="current-password">
+      </div>
+      <div class="field">
+        <label>NEW PASSWORD *</label>
+        <input type="password" id="settingPassNew" placeholder="New password (min 4 characters)" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label>CONFIRM NEW PASSWORD *</label>
+        <input type="password" id="settingPassConfirm" placeholder="Confirm new password" autocomplete="new-password">
+      </div>
+      <button class="btn btn-lime btn-sm" id="changePasswordBtn">UPDATE PASSWORD</button>
+      <p id="passwordChangeStatus" class="status-msg"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Product Order Modal -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <button class="modal-close" data-close="orderModal" aria-label="Close">×</button>
+    <h2>Order / Enquiry</h2>
+    <p class="modal-sub">Enter your details and quantity. We will open an email enquiry for you.</p>
+    <div class="product-order-preview" id="orderPreview">
+      <img id="orderImg" src="" alt="">
+      <div>
+        <h3 id="orderTitle"></h3>
+        <p id="orderDesc"></p>
+      </div>
+    </div>
+    <form id="orderForm">
+      <div class="field">
+        <label for="orderEmail">YOUR EMAIL *</label>
+        <input id="orderEmail" type="email" required placeholder="you@email.com">
+      </div>
+      <div class="field">
+        <label for="orderPhone">YOUR PHONE / WHATSAPP NUMBER *</label>
+        <input id="orderPhone" type="tel" required placeholder="+92 3xx xxxxxxx">
+      </div>
+      <div class="field">
+        <label for="orderQty">PRODUCT AMOUNT / QUANTITY *</label>
+        <input id="orderQty" type="text" required placeholder="e.g. 50 sets or 200 pieces">
+      </div>
+      <div class="field">
+        <label for="orderNotes">ADDITIONAL NOTES</label>
+        <textarea id="orderNotes" placeholder="Sizes, colours, branding…" style="min-height:80px"></textarea>
+      </div>
+      <button class="btn btn-lime" type="submit">SEND ENQUIRY →</button>
+      <p id="orderStatus" class="hint"></p>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ========== DEFAULT DATA ========== */
+const DEFAULT_SETTINGS = {
+  name: "WVN & Cotton Industry",
+  email: "wvnandcottonindustry02@gmail.com",
+  whatsapp: "923068160300",
+  phoneDisplay: "+92 306 8160300",
+  instagramLabel: "WVN & cotton industry",
+  instagramUrl: "https://www.instagram.com/wvnandcotton_?cplk=MXhpZmZ3d3MxcGtndQ=="
+};
+
+const DEFAULT_PRODUCTS = [
+  {
+    id: "p1",
+    title: "Football & Team Kits",
+    category: "01 / TEAM SPORTS",
+    description: "Custom jerseys, shorts and coordinated kits for clubs, teams, academies and sports organizations.",
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=850&q=85"
+  },
+  {
+    id: "p2",
+    title: "Basketball Uniforms",
+    category: "02 / COURT SPORTS",
+    description: "Custom basketball jerseys, shorts and coordinated teamwear with your preferred colours and branding.",
+    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=850&q=85"
+  },
+  {
+    id: "p3",
+    title: "Training & Running Wear",
+    category: "03 / PERFORMANCE",
+    description: "Performance tops, training tees, running apparel and activewear developed around your brief.",
+    image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=850&q=85"
+  },
+  {
+    id: "p4",
+    title: "Gym & Fitness Wear",
+    category: "04 / FITNESS",
+    description: "Gym tops, fitness apparel, shorts and workout clothing for activewear brands and businesses.",
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=850&q=85"
+  },
+  {
+    id: "p5",
+    title: "Hoodies & Tracksuits",
+    category: "05 / LIFESTYLE",
+    description: "Custom hoodies, sweatshirts, joggers and tracksuits for teams, casual collections and merchandise.",
+    image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=850&q=85"
+  },
+  {
+    id: "p6",
+    title: "Private Label Apparel",
+    category: "06 / YOUR BRAND",
+    description: "Discuss your own-label sportswear, logo placement, labels, colours and finishing requirements.",
+    image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=850&q=85"
+  }
+];
+
+const DEFAULT_ADMIN_PASSWORD = "admin123";
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=850&q=85";
+
+/* ========== STATE ========== */
+let settings = loadSettings();
+let products = loadProducts();
+let currentOrderProduct = null;
+let pendingImageDataUrl = null; // from file upload
+
+function loadSettings() {
+  try {
+    const s = localStorage.getItem("wvn_settings");
+    return s ? { ...DEFAULT_SETTINGS, ...JSON.parse(s) } : { ...DEFAULT_SETTINGS };
+  } catch (e) {
+    return { ...DEFAULT_SETTINGS };
+  }
+}
+
+function saveSettingsToStorage() {
+  localStorage.setItem("wvn_settings", JSON.stringify(settings));
+}
+
+function loadProducts() {
+  try {
+    const p = localStorage.getItem("wvn_products");
+    return p ? JSON.parse(p) : JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+  } catch (e) {
+    return JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+  }
+}
+
+function saveProductsToStorage() {
+  try {
+    localStorage.setItem("wvn_products", JSON.stringify(products));
+  } catch (e) {
+    alert("Could not save products (browser storage may be full). Try smaller images.");
+  }
+}
+
+function getAdminPassword() {
+  try {
+    return localStorage.getItem("wvn_admin_password") || DEFAULT_ADMIN_PASSWORD;
+  } catch (e) {
+    return DEFAULT_ADMIN_PASSWORD;
+  }
+}
+
+function setAdminPassword(pass) {
+  localStorage.setItem("wvn_admin_password", pass);
+}
+
+/* ========== APPLY SETTINGS TO PAGE ========== */
+function applySettings() {
+  const name = settings.name || DEFAULT_SETTINGS.name;
+  const email = settings.email || DEFAULT_SETTINGS.email;
+  const wa = (settings.whatsapp || DEFAULT_SETTINGS.whatsapp).replace(/\D/g, "");
+  const phoneText = settings.phoneDisplay || DEFAULT_SETTINGS.phoneDisplay;
+  const igLabel = settings.instagramLabel || DEFAULT_SETTINGS.instagramLabel;
+  const igUrl = settings.instagramUrl || DEFAULT_SETTINGS.instagramUrl;
+
+  document.getElementById("siteNameBrand").textContent = name.toUpperCase().replace(/ INDUSTRY$/i, "").trim() || "WVN & COTTON";
+  document.getElementById("siteNameFooter").textContent = name.toUpperCase().replace(/ INDUSTRY$/i, "").trim() || "WVN & COTTON";
+  document.getElementById("siteNameCopy").textContent = name;
+  document.getElementById("aboutLabel").textContent = name;
+  document.getElementById("displayEmail").textContent = email;
+  document.getElementById("displayPhone").textContent = phoneText;
+
+  const heroDesc = document.getElementById("heroDesc");
+  if (heroDesc) {
+    heroDesc.textContent = name + " manufactures custom football kits, basketball uniforms, training wear, gym wear, hoodies, tracksuits and private-label apparel for teams and brands worldwide.";
+  }
+  const aboutP1 = document.getElementById("aboutP1");
+  if (aboutP1) {
+    aboutP1.textContent = name + " works to support sportswear and apparel projects for brands, teams, academies, wholesalers and businesses seeking custom products.";
+  }
+
+  document.title = name + " | Custom Sportswear Manufacturer";
+
+  setupWhatsApp(wa);
+  document.getElementById("displayPhone").href = getWhatsAppUrl(wa);
+
+  document.getElementById("igLink").href = igUrl;
+  document.getElementById("igLink").textContent = igLabel;
+  document.getElementById("igLinkFooter").href = igUrl;
+  document.getElementById("igLinkFooter").textContent = igLabel;
+}
+
+function getWhatsAppUrl(number, message) {
+  const msg = encodeURIComponent(message || "Hello " + (settings.name || "WVN & Cotton Industry") + ", I would like to enquire about sportswear manufacturing.");
+  const clean = (number || "").replace(/\D/g, "");
+  if (/^\d{8,15}$/.test(clean)) {
+    return "https://wa.me/" + clean + "?text=" + msg;
+  }
+  return "https://wa.me/";
+}
+
+function setupWhatsApp(number) {
+  const url = getWhatsAppUrl(number);
+  ["whatsappLink", "whatsappBtn", "floatWa"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = url;
+  });
+}
+
+/* ========== RENDER PRODUCTS ========== */
+function renderProducts(filterText) {
+  const grid = document.getElementById("productsGrid");
+  const q = (filterText || "").trim().toLowerCase();
+  let list = products;
+  if (q && q !== "admin") {
+    list = products.filter(p =>
+      (p.title || "").toLowerCase().includes(q) ||
+      (p.description || "").toLowerCase().includes(q) ||
+      (p.category || "").toLowerCase().includes(q)
+    );
+  }
+  if (!list.length) {
+    grid.innerHTML = '<p style="color:var(--muted);grid-column:1/-1">No products found.</p>';
+    return;
+  }
+  grid.innerHTML = list.map(p => `
+    <article class="product" data-id="${p.id}" role="button" tabindex="0">
+      <img src="${escapeAttr(p.image || FALLBACK_IMAGE)}" alt="${escapeAttr(p.title)}">
+      <div class="product-info">
+        <small>${escapeHtml(p.category || "")}</small>
+        <h3>${escapeHtml(p.title)}</h3>
+        <p>${escapeHtml(p.description || "")}</p>
+      </div>
+    </article>
+  `).join("");
+
+  grid.querySelectorAll(".product").forEach(card => {
+    card.addEventListener("click", () => openOrderModal(card.dataset.id));
+    card.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openOrderModal(card.dataset.id);
+      }
+    });
+  });
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+function escapeAttr(str) {
+  return escapeHtml(str).replace(/'/g, "&#39;");
+}
+
+/* ========== SEARCH ========== */
+function handleSearch() {
+  const input = document.getElementById("siteSearch");
+  const val = (input.value || "").trim().toLowerCase();
+  // ALWAYS ask password first — never open admin panel directly
+  if (val === "admin") {
+    input.value = "";
+    closeModal("adminModal");
+    document.getElementById("adminPassword").value = "";
+    document.getElementById("passwordError").style.display = "none";
+    openModal("passwordModal");
+    setTimeout(() => document.getElementById("adminPassword").focus(), 100);
+    return;
+  }
+  renderProducts(val);
+  document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+}
+
+document.getElementById("searchBtn").addEventListener("click", handleSearch);
+document.getElementById("siteSearch").addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    handleSearch();
+  }
+});
+
+/* ========== MODALS ========== */
+function openModal(id) {
+  document.getElementById(id).classList.add("open");
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove("open");
+}
+document.querySelectorAll("[data-close]").forEach(btn => {
+  btn.addEventListener("click", () => closeModal(btn.getAttribute("data-close")));
+});
+document.querySelectorAll(".modal-overlay").forEach(overlay => {
+  overlay.addEventListener("click", e => {
+    if (e.target === overlay) closeModal(overlay.id);
+  });
+});
+
+/* ========== PASSWORD (required every time) ========== */
+document.getElementById("passwordSubmit").addEventListener("click", checkPassword);
+document.getElementById("adminPassword").addEventListener("keydown", e => {
+  if (e.key === "Enter") checkPassword();
+});
+
+function checkPassword() {
+  const pass = document.getElementById("adminPassword").value;
+  const err = document.getElementById("passwordError");
+  const correct = getAdminPassword();
+  // Must match stored password — never skip
+  if (pass && pass === correct) {
+    err.style.display = "none";
+    closeModal("passwordModal");
+    openAdminPanel();
+  } else {
+    err.textContent = "Incorrect password. Try again.";
+    err.style.display = "block";
+    document.getElementById("adminPassword").value = "";
+    document.getElementById("adminPassword").focus();
+  }
+}
+
+function openAdminPanel() {
+  document.getElementById("settingName").value = settings.name;
+  document.getElementById("settingEmail").value = settings.email;
+  document.getElementById("settingWhatsApp").value = settings.whatsapp;
+  document.getElementById("settingPhoneDisplay").value = settings.phoneDisplay;
+  document.getElementById("settingIgLabel").value = settings.instagramLabel || DEFAULT_SETTINGS.instagramLabel;
+  document.getElementById("settingIgUrl").value = settings.instagramUrl || DEFAULT_SETTINGS.instagramUrl;
+  document.getElementById("settingPassCurrent").value = "";
+  document.getElementById("settingPassNew").value = "";
+  document.getElementById("settingPassConfirm").value = "";
+  document.getElementById("settingsStatus").textContent = "";
+  const pcs = document.getElementById("passwordChangeStatus");
+  if (pcs) pcs.textContent = "";
+  pendingImageDataUrl = null;
+  const prev = document.getElementById("newProductPreview");
+  prev.classList.remove("show");
+  prev.src = "";
+  document.getElementById("newProductFile").value = "";
+  document.getElementById("newProductImgUrl").value = "";
+  renderAdminProductList();
+  document.querySelectorAll(".admin-tab").forEach(t => t.classList.remove("active"));
+  document.querySelector('.admin-tab[data-tab="products"]').classList.add("active");
+  document.querySelectorAll(".admin-panel-section").forEach(s => s.classList.remove("active"));
+  document.getElementById("tab-products").classList.add("active");
+  openModal("adminModal");
+}
+
+/* Admin tabs */
+document.querySelectorAll(".admin-tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".admin-tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    document.querySelectorAll(".admin-panel-section").forEach(s => s.classList.remove("active"));
+    document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+  });
+});
+
+/* ========== IMAGE UPLOAD (no size limit enforced) ========== */
+document.getElementById("newProductFile").addEventListener("change", function() {
+  const file = this.files && this.files[0];
+  const prev = document.getElementById("newProductPreview");
+  const status = document.getElementById("addProductStatus");
+  pendingImageDataUrl = null;
+  prev.classList.remove("show");
+  prev.src = "";
+  if (!file) return;
+  if (!file.type.startsWith("image/")) {
+    status.textContent = "Please select an image file.";
+    status.className = "status-msg error-msg";
+    this.value = "";
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    pendingImageDataUrl = e.target.result;
+    prev.src = pendingImageDataUrl;
+    prev.classList.add("show");
+    status.textContent = "Image ready to upload with product.";
+    status.className = "status-msg";
+  };
+  reader.onerror = function() {
+    status.textContent = "Could not read image file.";
+    status.className = "status-msg error-msg";
+  };
+  reader.readAsDataURL(file);
+});
+
+/* ========== ADMIN: PRODUCTS ========== */
+function renderAdminProductList() {
+  const list = document.getElementById("adminProductList");
+  if (!products.length) {
+    list.innerHTML = '<p style="color:var(--muted);font-size:13px">No products yet.</p>';
+    return;
+  }
+  list.innerHTML = products.map(p => `
+    <div class="admin-product-item">
+      <span>${escapeHtml(p.title)}</span>
+      <button class="btn btn-danger btn-sm" data-remove="${p.id}">Remove</button>
+    </div>
+  `).join("");
+  list.querySelectorAll("[data-remove]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-remove");
+      products = products.filter(p => p.id !== id);
+      saveProductsToStorage();
+      renderAdminProductList();
+      renderProducts();
+    });
+  });
+}
+
+document.getElementById("addProductBtn").addEventListener("click", () => {
+  const title = document.getElementById("newProductTitle").value.trim();
+  const cat = document.getElementById("newProductCat").value.trim();
+  const desc = document.getElementById("newProductDesc").value.trim();
+  const url = document.getElementById("newProductImgUrl").value.trim();
+  const status = document.getElementById("addProductStatus");
+  if (!title) {
+    status.textContent = "Title is required.";
+    status.className = "status-msg error-msg";
+    return;
+  }
+  const image = pendingImageDataUrl || url || FALLBACK_IMAGE;
+  const id = "p" + Date.now();
+  products.push({
+    id,
+    title,
+    category: cat || "NEW",
+    description: desc || "",
+    image: image
+  });
+  try {
+    saveProductsToStorage();
+  } catch (e) {
+    status.textContent = "Storage full — try a smaller image or use an image URL instead.";
+    status.className = "status-msg error-msg";
+    products.pop();
+    return;
+  }
+  renderAdminProductList();
+  renderProducts();
+  document.getElementById("newProductTitle").value = "";
+  document.getElementById("newProductCat").value = "";
+  document.getElementById("newProductDesc").value = "";
+  document.getElementById("newProductImgUrl").value = "";
+  document.getElementById("newProductFile").value = "";
+  pendingImageDataUrl = null;
+  const prev = document.getElementById("newProductPreview");
+  prev.classList.remove("show");
+  prev.src = "";
+  status.textContent = "Product added.";
+  status.className = "status-msg";
+});
+
+/* ========== ADMIN: SETTINGS ========== */
+document.getElementById("saveSettingsBtn").addEventListener("click", () => {
+  const status = document.getElementById("settingsStatus");
+  settings.name = document.getElementById("settingName").value.trim() || DEFAULT_SETTINGS.name;
+  settings.email = document.getElementById("settingEmail").value.trim() || DEFAULT_SETTINGS.email;
+  settings.whatsapp = document.getElementById("settingWhatsApp").value.replace(/\D/g, "") || DEFAULT_SETTINGS.whatsapp;
+  settings.phoneDisplay = document.getElementById("settingPhoneDisplay").value.trim() || DEFAULT_SETTINGS.phoneDisplay;
+  settings.instagramLabel = document.getElementById("settingIgLabel").value.trim() || DEFAULT_SETTINGS.instagramLabel;
+  settings.instagramUrl = document.getElementById("settingIgUrl").value.trim() || DEFAULT_SETTINGS.instagramUrl;
+  saveSettingsToStorage();
+  applySettings();
+  status.textContent = "Settings saved. Name, email, WhatsApp and Instagram updated across the site.";
+  status.className = "status-msg";
+});
+
+/* ========== ADMIN: CHANGE PASSWORD (dedicated tab) ========== */
+document.getElementById("changePasswordBtn").addEventListener("click", () => {
+  const status = document.getElementById("passwordChangeStatus");
+  const curPass = document.getElementById("settingPassCurrent").value;
+  const newPass = document.getElementById("settingPassNew").value;
+  const confPass = document.getElementById("settingPassConfirm").value;
+
+  if (!curPass) {
+    status.textContent = "Enter current password.";
+    status.className = "status-msg error-msg";
+    return;
+  }
+  if (curPass !== getAdminPassword()) {
+    status.textContent = "Current password is incorrect.";
+    status.className = "status-msg error-msg";
+    return;
+  }
+  if (!newPass || newPass.length < 4) {
+    status.textContent = "New password must be at least 4 characters.";
+    status.className = "status-msg error-msg";
+    return;
+  }
+  if (newPass !== confPass) {
+    status.textContent = "New password and confirm do not match.";
+    status.className = "status-msg error-msg";
+    return;
+  }
+  setAdminPassword(newPass);
+  document.getElementById("settingPassCurrent").value = "";
+  document.getElementById("settingPassNew").value = "";
+  document.getElementById("settingPassConfirm").value = "";
+  status.textContent = "Password updated. Next time type “admin” in search and use the new password.";
+  status.className = "status-msg";
+});
+
+/* ========== PRODUCT ORDER ========== */
+function openOrderModal(productId) {
+  const p = products.find(x => x.id === productId);
+  if (!p) return;
+  currentOrderProduct = p;
+  document.getElementById("orderImg").src = p.image || FALLBACK_IMAGE;
+  document.getElementById("orderTitle").textContent = p.title;
+  document.getElementById("orderDesc").textContent = p.description || "";
+  document.getElementById("orderEmail").value = "";
+  document.getElementById("orderPhone").value = "";
+  document.getElementById("orderQty").value = "";
+  document.getElementById("orderNotes").value = "";
+  document.getElementById("orderStatus").textContent = "";
+  openModal("orderModal");
+}
+
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  if (!currentOrderProduct) return;
+  const email = document.getElementById("orderEmail").value.trim();
+  const phone = document.getElementById("orderPhone").value.trim();
+  const qty = document.getElementById("orderQty").value.trim();
+  const notes = document.getElementById("orderNotes").value.trim();
+  const companyEmail = settings.email || DEFAULT_SETTINGS.email;
+  const subject = encodeURIComponent("Product enquiry — " + currentOrderProduct.title + " — " + email);
+  const body = encodeURIComponent(
+    "Product: " + currentOrderProduct.title +
+    "\nCustomer email: " + email +
+    "\nCustomer phone: " + phone +
+    "\nQuantity / amount: " + qty +
+    "\n\nNotes:\n" + (notes || "None")
+  );
+  window.location.href = "mailto:" + companyEmail + "?subject=" + subject + "&body=" + body;
+  document.getElementById("orderStatus").textContent = "Opening your email app…";
+});
+
+/* ========== QUOTE FORM ========== */
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const d = new FormData(this);
+  const companyEmail = settings.email || DEFAULT_SETTINGS.email;
+  const subject = encodeURIComponent("Sportswear manufacturing enquiry — " + d.get("name"));
+  const body = encodeURIComponent(
+    "Name: " + d.get("name") +
+    "\nCompany: " + (d.get("company") || "Not provided") +
+    "\nEmail: " + d.get("email") +
+    "\nProduct: " + d.get("product") +
+    "\n\nProject details:\n" + d.get("details")
+  );
+  window.location.href = "mailto:" + companyEmail + "?subject=" + subject + "&body=" + body;
+});
+
+/* ========== NAV / YEAR ========== */
+const menu = document.getElementById("menu");
+const links = document.getElementById("links");
+menu.addEventListener("click", () => links.classList.toggle("open"));
+links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => links.classList.remove("open")));
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ========== INIT ========== */
+applySettings();
+renderProducts();
+</script>
+</body>
+</html>
